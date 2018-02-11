@@ -1,0 +1,11 @@
+ernest/giorgi/service/LoanFactory.class
+ernest/giorgi/domain/Repayment.class
+ernest/giorgi/controllers/IndexController.class
+ernest/giorgi/repository/RepaymentRepository.class
+ernest/giorgi/configuration/WebConfiguration.class
+ernest/giorgi/controllers/LoanController.class
+ernest/giorgi/domain/Loan.class
+ernest/giorgi/repository/LoanRepository.class
+ernest/giorgi/service/impl/LoanFactoryImpl.class
+ernest/giorgi/LoanFactoryWebApplication.class
+ernest/giorgi/configuration/SecurityConfiguration.class

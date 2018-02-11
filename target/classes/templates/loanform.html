@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <title>Loan Factory</title>
+
+    <!--/*/ <th:block th:include="fragments/headerinc :: head"></th:block> /*/-->
+</head>
+<body>
+<div class="container">
+    <!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
+
+    <h2>Loan Details</h2>
+    <div>
+        <form class="form-horizontal" th:action="@{/loan/new}" method="post">
+            <div class="form-group">
+						<label  class="col-md-2 control-label" for="totalLoanAmount">Total Amount:</label>
+						<div class="input-group" style="width: 150px">
+							<input th:value="${totalLoanAmount}" type="number" step="1"
+								name="totalLoanAmount" class="form-control" id="totalLoanAmount" />
+							<span class="input-group-addon">€</span>
+						</div>
+			</div>
+            <div class="form-group">
+						<label  class="col-md-2 control-label" for="nominalInterestRate">Nominal Interest Rate:</label>
+						<div class="input-group" style="width: 150px">
+							<input th:value="${nominalInterestRate}" type="number" step="1"
+								name="nominalInterestRate" class="form-control" id="nominalInterestRate" />
+							<span class="input-group-addon">%</span>
+						</div>
+			</div>
+            <div class="form-group">
+						<label  class="col-md-2 control-label" for="durationMonths">Paying Lenght in Months:</label>
+						<div class="input-group" style="width: 150px">
+							<input th:value="${durationMonths}" type="number" step="1"
+								name="durationMonths" class="form-control" id="durationMonths" />
+							<span class="input-group-addon">months</span>
+						</div>
+			</div>
+			<div class="form-group">
+						<label class="col-md-2 control-label" for="startDate">Start Payment
+							Date</label>
+						<div class="input-group" style="width: 150px">
+							<input type="date" class="form-control" id="startDate"
+								name="startDate" th:value="${startDate}"
+								placeholder="Start Payment Date" />
+						</div>
+			</div>
+            <div class="row">
+                <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

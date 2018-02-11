@@ -1,0 +1,11 @@
+/home/juda/Documents/git_stuff/loanfactorywebapp/src/main/java/ernest/giorgi/configuration/SecurityConfiguration.java
+/home/juda/Documents/git_stuff/loanfactorywebapp/src/main/java/ernest/giorgi/repository/RepaymentRepository.java
+/home/juda/Documents/git_stuff/loanfactorywebapp/src/main/java/ernest/giorgi/controllers/LoanController.java
+/home/juda/Documents/git_stuff/loanfactorywebapp/src/main/java/ernest/giorgi/domain/Loan.java
+/home/juda/Documents/git_stuff/loanfactorywebapp/src/main/java/ernest/giorgi/service/impl/LoanFactoryImpl.java
+/home/juda/Documents/git_stuff/loanfactorywebapp/src/main/java/ernest/giorgi/LoanFactoryWebApplication.java
+/home/juda/Documents/git_stuff/loanfactorywebapp/src/main/java/ernest/giorgi/configuration/WebConfiguration.java
+/home/juda/Documents/git_stuff/loanfactorywebapp/src/main/java/ernest/giorgi/domain/Repayment.java
+/home/juda/Documents/git_stuff/loanfactorywebapp/src/main/java/ernest/giorgi/controllers/IndexController.java
+/home/juda/Documents/git_stuff/loanfactorywebapp/src/main/java/ernest/giorgi/service/LoanFactory.java
+/home/juda/Documents/git_stuff/loanfactorywebapp/src/main/java/ernest/giorgi/repository/LoanRepository.java

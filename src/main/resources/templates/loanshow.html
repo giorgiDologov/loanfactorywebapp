@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <title>Loan Factory</title>
+
+    <!--/*/ <th:block th:include="fragments/headerinc :: head"></th:block> /*/-->
+</head>
+<body>
+<div class="container">
+    <!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
+
+    <h2>Loan Details</h2>
+      <h2>Repayment</h2>
+        <table class="table table-striped">
+            <tr>
+                <th>Date</th>
+                <th>Annuity</th>
+                <th>Principal</th>
+                <th>Interest</th>
+                <th>Initial Outstanding Principal</th>
+                <th>Remaining Outstanding Principal</th>
+            </tr>
+            <tr th:each="repayment : ${repaymentList}">
+                <td th:text="${repayment.planPaymentDate}"></td>
+                <td th:text="${#numbers.formatDecimal(repayment.annuity, 0, 'COMMA', 2, 'POINT') + ' €'}"></td>
+                <td th:text="${#numbers.formatDecimal(repayment.principal, 0, 'COMMA', 2, 'POINT') + ' €'}"></td>
+                <td th:text="${#numbers.formatDecimal(repayment.interest, 0, 'COMMA', 2, 'POINT') + ' €'}"></td>
+                <td th:text="${#numbers.formatDecimal(repayment.initialOutstandingPrincipal, 0, 'COMMA', 2, 'POINT')+ ' €'}"></td>
+                <td th:text="${#numbers.formatDecimal(repayment.remainingOutStandingPrincipal, 0, 'COMMA', 2, 'POINT')+ ' €'}"></td>
+            </tr>
+        </table>
+      
+</div>
+
+</body>
+</html>
